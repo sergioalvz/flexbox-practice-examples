@@ -1,0 +1,17 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mochilo {
+  height: 4vh;
+}
+
+.gazpacho {
+  flex-grow: 1;
+}
+
+.pincho {
+  height: 10vh;
+}

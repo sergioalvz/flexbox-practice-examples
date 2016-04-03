@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+  <style>
+    :root {
+      --background: #fafafa;
+      --foreground: #fff;
+      --mochilo: #ffea00;
+      --gazpacho: #ff9100;
+      --pincho: #00e676;
+      --selected: #2979FF;
+
+      --font-family: sans-serif;
+
+      --fruitti-size: 10px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .page {
+      background-color: var(--background);
+    }
+
+    .fruitti {
+      padding: var(--fruitti-size);
+
+      color: var(--foreground);
+      font-family: var(--font-family);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .mochilo {
+      background-color: var(--mochilo);
+    }
+
+    .gazpacho {
+      background-color: var(--gazpacho);
+    }
+
+    .pincho {
+      background-color: var(--pincho);
+    }
+  </style>
+
+  <link href="./shrink.css" rel="stylesheet">
+</head>
+
+<body class="page">
+  <div class="fruitti gazpacho"><span>gazpacho</span></div>
+  <div class="fruitti mochilo"><span>mochilo</span></div>
+  <div class="fruitti pincho"><span>pincho</span></div>
+</body>
+
+</html>
