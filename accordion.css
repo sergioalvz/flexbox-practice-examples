@@ -7,6 +7,6 @@
   flex: 1 100 500px;
 }
 
-.pincho {
+.fruitti:last-of-type {
   flex-shrink: 1;
 }

@@ -1,0 +1,45 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page > .fruitti:first-of-type {
+  height: 4vh;
+}
+
+.page > .fruitti:last-of-type {
+  height: 10vh;
+}
+
+.page__main {
+  display: flex;
+  flex-grow: 1;
+}
+
+.page__main > .fruitti:first-of-type,
+.page__main > .fruitti:last-of-type {
+  flex-basis: calc(130px - var(--fruitti-size) * 2);
+}
+
+.page__main > .fruitti:nth-of-type(2) {
+  flex-grow: 1;
+}
+
+@media (max-width: 700px) {
+  .page__main {
+    flex-direction: column;
+  }
+
+  .page__main > .fruitti:first-of-type {
+    order: 1;
+  }
+
+  .page__main > .fruitti:nth-of-type(2) {
+    order: 0;
+  }
+
+  .page__main > .fruitti:last-of-type {
+    order: 2;
+  }
+}

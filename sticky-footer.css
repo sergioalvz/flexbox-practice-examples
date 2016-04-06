@@ -4,14 +4,14 @@
   min-height: 100vh;
 }
 
-.mochilo {
+.fruitti:first-of-type {
   height: 4vh;
 }
 
-.gazpacho {
+.fruitti:nth-of-type(2) {
   flex-grow: 1;
 }
 
-.pincho {
+.fruitti:last-of-type {
   height: 10vh;
 }
