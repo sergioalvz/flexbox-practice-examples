@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <link href="./base.css" rel="stylesheet">
+
+  <style>
+    .page {
+      display: flex;
+    }
+
+    .fruitti {
+      padding: calc(var(--fruitti-size) * 2) var(--fruitti-size);
+
+      cursor: pointer;
+    }
+
+    .mochilo,
+    .pincho {
+      width: 10vw;
+    }
+
+    .gazpacho {
+      flex-grow: 1;
+    }
+
+    .mochilo {
+      order: 0;
+    }
+
+    .gazpacho {
+      order: 1;
+    }
+
+    .pincho {
+      order: 2;
+
+      display: none;
+    }
+
+    .gazpacho:hover ~ .fruitti {
+      background-color: var(--selected);
+
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="page">
+  <div class="fruitti gazpacho"><span>gazpacho</span></div>
+  <div class="fruitti mochilo"><span>mochilo</span></div>
+  <div class="fruitti pincho"><span>pincho</span></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <link href="./base.css" rel="stylesheet">
+
+  <style>
+    .page {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .page > .fruitti:first-of-type {
+      height: 4vh;
+    }
+
+    .page > .fruitti:last-of-type {
+      height: 10vh;
+    }
+
+    .page__main {
+      display: flex;
+      flex-grow: 1;
+    }
+
+    .page__main > .fruitti:first-of-type,
+    .page__main > .fruitti:last-of-type {
+      flex-basis: calc(130px - var(--fruitti-size) * 2);
+    }
+
+    .page__main > .fruitti:nth-of-type(2) {
+      flex-grow: 1;
+    }
+
+    @media (max-width: 700px) {
+      .page__main {
+        flex-direction: column;
+      }
+
+      .page__main > .fruitti:first-of-type {
+        order: 1;
+      }
+
+      .page__main > .fruitti:nth-of-type(2) {
+        order: 0;
+      }
+
+      .page__main > .fruitti:last-of-type {
+        order: 2;
+      }
+    }
+  </style>
+</head>
+
+<body class="page">
+  <div class="fruitti gazpacho"><span>gazpacho</span></div>
+  <div class="page__main">
+    <div class="fruitti mochilo"><span>mochilo</span></div>
+    <div class="fruitti pincho"><span>pincho</span></div>
+    <div class="fruitti freson"><span>fresón</span></div>
+  </div>
+  <div class="fruitti monus"><span>monus</span></div>
+</body>
+</html>
