@@ -1,0 +1,52 @@
+:root {
+  --background: #fafafa;
+  --foreground: #fff;
+  --mochilo: #ffea00;
+  --gazpacho: #ff9100;
+  --pincho: #00e676;
+  --freson: #f50057;
+  --monus: #8d6e63;
+  --selected: #2979ff;
+
+  --font-family: sans-serif;
+
+  --fruitti-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background-color: var(--background);
+}
+
+.fruitti {
+  padding: var(--fruitti-size);
+
+  color: var(--foreground);
+  font-family: var(--font-family);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.mochilo {
+  background-color: var(--mochilo);
+}
+
+.gazpacho {
+  background-color: var(--gazpacho);
+}
+
+.pincho {
+  background-color: var(--pincho);
+}
+
+.freson {
+  background-color: var(--freson);
+}
+
+.monus {
+  background-color: var(--monus);
+}
